@@ -1,0 +1,23 @@
+#Web Scraper Project
+#This web scraper project finds the price of an item on Newegg. 
+
+#import using BeautifulSoup4
+from bs4 import BeautifulSoup
+import requests
+
+#Must use http or https only, otherwise you'll get an error.
+url = "https://www.newegg.com/sandisk-1tb-microsdxc/p/N82E16820173498?Description=micro%20ssd&cm_re=micro_ssd-_-20-173-498-_-Product&quicklink=true"
+result = requests.get(url).text
+doc = BeautifulSoup(result, "html.parser")
+
+#Finds the information from the $ sign
+prices = doc.find_all(text="$")
+
+#Finding the parent tag in the html file from the website
+parent = prices[0].parent
+
+#Searching through the html tag labled strong
+strong = parent.find("strong")
+
+#Prints information when you run the program
+print(strong.string)
