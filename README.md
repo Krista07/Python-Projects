@@ -1,2 +1,5 @@
 # Python-Projects
-Here you'll find my progress as I teach myself Python and see how much I've improved my skillset
+
+This is where I'll post my progress and projects as I learn Python for Data Analysis.
+
+You may also see some things regarding app development or software development as I venture further.
