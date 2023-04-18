@@ -4,7 +4,7 @@ Created on Mon Apr 10 14:37:30 2023
 
 @author: Krista
 """
-
+import pandas as pd
 import datetime
 
 def next_weekday(d, weekday):
@@ -20,4 +20,8 @@ today = date.today()
 #0 = Monday, 1=Tuesday, 2=Wednesday...
 DayofWeek = next_weekday(today, 1)
 #Print the output
-print(DayofWeek.strftime("%m/%d/%Y"))
+Tuesday = (DayofWeek.strftime("%m/%d/%y"))
+
+
+
+df["column name"] = Tuesday
