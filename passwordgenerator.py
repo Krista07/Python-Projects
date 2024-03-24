@@ -8,7 +8,7 @@ Created on Wed Mar 20 20:41:15 2024
 import string
 import random
 
-characters = list(string.ascii_letters + string.digits + "!@#$%^&*()")
+characters = list(string.ascii_letters + string.digits + "~`!@#$%^&*()_-+={[}]|:;<,>.?\/")
 
 def generate_password():
     #asking the user how long they want their password to be.
