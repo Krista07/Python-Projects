@@ -1,3 +1,6 @@
+#This is a very simple randomization project that outputs a random place on the list for the user.
+#If the user doesn't want to go to the randomly selected place, they can restart the script.
+
 import random
 
 #List of Resturants or food types
