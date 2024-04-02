@@ -4,6 +4,10 @@ Created on Mon Apr 10 14:37:30 2023
 
 @author: Krista
 """
+
+# This project is for adding a future date based on the day of the week.
+#I used this in Excel for date automation for big data.
+
 import pandas as pd
 import datetime
 
