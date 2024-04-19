@@ -1,5 +1,5 @@
 #I made this script about 2 years ago when I wanted to learn more about web scrapping.
-#This code is a super similar and basic web scrapper for a website called Newegg.
+#This code is a simple and basic web scrapper for a website called Newegg.
 
 #If you decide to copy this code and run it on other websites, please keep in mind there are laws and regulations regarding web scrapping.
 #Please review you local and state laws before deciding to do so.
