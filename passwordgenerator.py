@@ -12,7 +12,7 @@ Created on Wed Mar 20 20:41:15 2024
 
 #Python allows you to use multiple modules within the same line for the import function.
 
-import string, secrets, random
+import string, secrets
 
 #This is a custom variable to calls letters from the alphabet, numbers, and random keyboard symbols.
 characters = list(string.ascii_letters + string.digits + string.punctuation)
