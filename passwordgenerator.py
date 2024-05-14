@@ -8,39 +8,19 @@ Created on Wed Mar 20 20:41:15 2024
 # #modules
 # Python allows imports to be on the same line and be seperated by a comma.
 # =============================================================================
-import string, random
+#This is an updated Password generator using the most up to date functions for Python
 
+#Python allows you to use multiple modules within the same line for the import function.
+
+import string, secrets, random
+
+#This is a custom variable to calls letters from the alphabet, numbers, and random keyboard symbols.
 characters = list(string.ascii_letters + string.digits + string.punctuation)
 
-def generate_password():
-    #asking the user how long they want their password to be.
-    password_length = int(input('Length of password?: '))
-    #Shuffling the data from the characters variable.
-    random.shuffle(characters)
-    
-    password = []
-    
-    for x in range(password_length):
-        password.append(random.choice(characters))
-        
-    random.shuffle(password)
-    
-    password =''.join(password)
-    print(password)
-    
-generate_password()
+def generatePassword():
+    #Creates a password based on digital input from the user.
+    password = ''.join(secrets.choice(characters) for i in range(int(input('Character length for password?: '))))
 
-    
-#Asking the user if they want to generate a password. 
-# =============================================================================
-# option = input("Do you want to generate a password?: ")
-# 
-# #Added casefold method to if statement, so case-sensitivity won't be an issue. 
-# 
-# if option == 'Yes' or'Y'.casefold():
-#     generate_password()
-# elif option == 'No' or 'N'.casefold():
-#     print('No password generated.')
-# else:
-#     print('Invalid input. Please restart the program and type "Yes" or "No". Thank you.')
-# =============================================================================
+    print(password)
+
+generatePassword()
